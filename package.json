@@ -1,0 +1,35 @@
+{
+  "name": "infoscreen",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.15.0",
+    "jquery": "^3.1.1",
+    "open": "0.0.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
+    "babel-preset-es2015": "^6.22.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "del-cli": "^0.2.1",
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "prebuild": "del-cli dist -f",
+    "build": "webpack",
+    "execute": "node dist/server.js",
+    "start": "npm run build -s && npm run execute -s"
+  },
+  "description": "This is an information screen written in JS. It can display the content of several urls by looping over an array. The given array must contain an object with the url to be loaded and a timeout.",
+  "main": "infoscreen.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aamrein/infoscreenJS.git"
+  },
+  "author": "Andreas Amrein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aamrein/infoscreenJS/issues"
+  },
+  "homepage": "https://github.com/aamrein/infoscreenJS#readme"
+}
