@@ -1,5 +1,4 @@
 [
-  {"timeout": 15000, "res": "http://images.media-allrecipes.com/userphotos/560x315/3570996.jpg"},
-  {"timeout": 15000, "res": "http://localhost:4200/user/register"},
-  {"timeout": 15000, "res": "http://localhost:4200/user/login"}
+  {"timeout": 5000, "res": "https://nodejs.org/en/"},
+  {"timeout": 10000, "res": "https://webpack.github.io/"}
 ]

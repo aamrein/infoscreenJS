@@ -3,7 +3,6 @@ import $ from "jquery";
 window.onload = runInfoscreen;
 
 $.getJSON("http://localhost:8080/resources.json", function(data) {
-    console.log(data);
     runInfoscreen(data);
 });
 
