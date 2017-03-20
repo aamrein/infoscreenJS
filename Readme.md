@@ -1,16 +1,16 @@
-#InfoscreenJS
+# InfoscreenJS
 This is an information screen written in JS. It can display the content of several urls by looping over an array.
 The given array must contain an object with the url to be loaded and a timeout.
 
-##Installation
+## Installation
 The application can be deployed in various ways. This description focus on an installation on a linux distribution an 
 a firefox browser.
 
-###Build
+### Build
 Install ```nodejs``` and ```npm``` packet manager first. After the installation run ```npm run build```. With the command ```npm start``` the 
 application will be build and started.
 
-###Deploy
+### Deploy
 Copy all files from the dist folder to your preferred location. Open a terminal an navigate to this location. 
 
 Install ```pm2``` on your distribution and start the server. If the server should start automatic, generate a startup
@@ -25,7 +25,7 @@ Run the given command as root.
 pm2 save
 ```
 
-###Firefox configuration
+### Firefox configuration
 If you like to use this application in full screen mode, us a firefox. The attribute below in the firefox config must 
 be set to false.
 
@@ -36,7 +36,7 @@ Set the attribute to false:
 full-screen-api.allow-trusted-requests-only = false
 ```
 
-##How to use
+## How to use
 A folder named ```resources``` is located in the deployed directory. This folder must contain a file called 
 ```resources.json```. The content of the file describes the resources to load on the information screen an how 
 long this resources should be displayed. The description is a json array with multiple objects. The objects must 
