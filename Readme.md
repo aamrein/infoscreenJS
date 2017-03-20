@@ -45,7 +45,11 @@ milliseconds. An example is given below.
 
 ```json
 [
-  {"timeout": 5000, "res": "https://github.com/aamrein/infoscreenJS"},
-  {"timeout": 10000, "res": "https://github.com/aamrein"}
+  {"timeout": 5000, "res": "https://nodejs.org/en/"},
+  {"timeout": 10000, "res": "https://webpack.github.io/"}
 ]
 ```
+
+## Limitations
+If you like to display third party websites, you can do this only if the website allows you to display the website in a 
+frame. Otherwise you will reach an error like ```Load denied by X-Frame-Options: 'URL' does not permit framing.```
